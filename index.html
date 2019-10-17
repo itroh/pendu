@@ -11,13 +11,20 @@
     <div>
         <h1>Le jeu du pendu</h1>
     </div>
-    <div class="wordSelectedDiv">
+    <div class="wordSelectedDiv" id="wordSelectedDiv">
         <input type="text" id="wordSelected" placeholder="Choisis un mot" class="wordChoice">
         <input type="button" value="Choisir" id="btnChoix">
     </div>
     <div class="divScore">
-        <p>Tu as <span id="score">10</span> point(s)</p>
+        <p>Tu as <span id="score"></span> point(s)</p>
     </div>
+    <div id="tentative">
+        <div id="squelette"></div>
+        <input type="texte" id="motTente" class="tentative" placeholder="Encore un essai ?">
+        <input type="button" value="ok" id="btnTentative">
+    </div>
+    <div id="looser">YOU LOOOOOOSE</div>
+    <div id="winner">YOU WIIIIIN</div>
     <script src="script.js"></script>
 </body>
 </html>
